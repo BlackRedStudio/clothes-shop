@@ -35,8 +35,7 @@ const sections = [
       id: 5,
       linkUrl: 'mens'
     }
-  ];
-  
+];
 
 class Directory extends Component {
 
