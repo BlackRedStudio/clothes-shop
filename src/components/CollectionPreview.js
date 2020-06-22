@@ -1,10 +1,13 @@
 import React from 'react'
-import '../styles/PreviewCollection.scss'
+import '../styles/CollectionPreview.scss'
 import CollectionItem from './CollectionItem'
 
-const PreviewCollection = ({ title, items }) => {
+const CollectionPreview = ({ title, items }) => {
 
-    const itemsList = items.filter((item, id) => id < 4).map(({id, ...otherItemProps}) => <CollectionItem key={id} {...otherItemProps}></CollectionItem>)
+    const itemsList = items
+    .filter((item, id) => id < 4)
+    .map(item => 
+    <CollectionItem key={item.id} item={item}></CollectionItem>)
     return (
         <div className="collection-preview">
             <h1 className="title">{title}</h1>
@@ -15,4 +18,4 @@ const PreviewCollection = ({ title, items }) => {
     )
 }
 
-export default PreviewCollection
+export default CollectionPreview
