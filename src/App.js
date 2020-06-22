@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import LoginRegisterPage from "./pages/LoginRegisterPage";
 import { auth, createUserProfileDocument } from './firebase/firebase-utils'
 import { connect } from 'react-redux';
-import { setCurrentUser } from './actions/user-actions'
+import { setCurrentUser } from './redux/actions/user-actions'
 
 import "./styles/App.scss";
 
