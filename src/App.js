@@ -3,7 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-// import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import Header from './components/Header';
 import LoginRegisterPage from './pages/LoginRegisterPage';
@@ -47,7 +47,7 @@ class App extends Component {
 			<div>
 				<Header />
 				<Switch>
-					{/* <Route exact path="/" component={HomePage} /> */}
+					<Route exact path="/" component={HomePage} />
 					<Route path="/shop" component={ShopPage} />
 					<Route exact path="/checkout" component={CheckoutPage} />
 					<Route
