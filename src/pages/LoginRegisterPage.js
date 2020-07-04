@@ -1,15 +1,15 @@
-import React from 'react'
-import SignIn from '../components/SignIn'
-import SignUp from '../components/SignUp'
-import '../styles/LoginRegisterPage.scss'
+import React from 'react';
+import SignIn from '../components/SignIn';
+import SignUp from '../components/SignUp';
+import { LoginRegisterPageContainer } from '../styles/LoginRegisterPageStyles';
 
 const LoginRegisterPage = () => {
-    return (
-        <div className="login-register">
-            <SignIn />
-            <SignUp />
-        </div>
-    )
-}
+	return (
+		<LoginRegisterPageContainer>
+			<SignIn />
+			<SignUp />
+		</LoginRegisterPageContainer>
+	);
+};
 
-export default LoginRegisterPage
+export default LoginRegisterPage;
