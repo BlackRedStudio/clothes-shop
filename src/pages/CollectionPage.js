@@ -11,7 +11,6 @@ import {
 } from '../styles/CollectionPageStyles';
 
 const CollectionPage = ({ collection }) => {
-	console.log(collection);
 	const { title, items } = collection;
 
 	const itemList = items.map(item => (
