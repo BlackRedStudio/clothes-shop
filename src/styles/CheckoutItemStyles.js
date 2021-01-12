@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const TextContainer = styled.span`
 	width: 23%;
+	@media screen and (max-width: 800px) {
+		font-size: 16px;
+	}
 `;
 export const QuantityContainer = styled(TextContainer)`
 	display: flex;
